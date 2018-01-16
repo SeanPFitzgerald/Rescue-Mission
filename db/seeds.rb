@@ -11,17 +11,13 @@ u2 = User.create(username: "nedstark", provider: "facebook")
 u3 = User.create(username: "jaimelannister", provider: "twitter")
 
 q1 = Question.create(title: "Are you sure that this is cool?",
-                  description: "Checking if this should be at least fifty characters",
-                  user: u1)
+                  description: "Checking if this should be at least fifty characters")
 
 q1 = Question.create(title: "Are you sure that this is dumb?",
-                  description: "Making sure that this is at least fifty characters though",
-                  user: u1)
+                  description: "Making sure that this is at least fifty characters though")
 
 q1 = Question.create(title: "Are you sure that this is rad?",
-                  description: "Could all this be rad as long as there is at least fifty characters",
-                  user: u2)
+                  description: "Could all this be rad as long as there is at least fifty characters")
 
 q1 = Question.create(title: "Are you sure that this is baller?",
-                  description: "Can anything be baller if it is at least fifty characters",
-                  user: u3)
+                  description: "Can anything be baller if it is at least fifty characters")

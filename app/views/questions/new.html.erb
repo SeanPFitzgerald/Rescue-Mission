@@ -1,0 +1,28 @@
+<h1>Enter a new Question</h1>
+
+<% if !@errors.nil? %>
+  <ul>
+    <% @errors.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @question do |f| %>
+  <div>
+    <%= f.label :title %>:
+    <%= f.text_field :title %>
+  </div><br />
+
+  <div>
+    <%= f.label :description %>: <br />
+    <%= f.text_area :description, size: "50x5" %>
+  </div><br />
+
+  <div>
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
+<br />
+
+<%= link_to "Back", questions_path %>
